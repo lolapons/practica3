@@ -22,7 +22,7 @@ ListaPositivos<reales>
 int filtrarPositivos(double *lista1, double *lista2, int n){
     int cuantos=0;
     for(int i=0;i<n;i++){
-        if(lista1[i]>0){
+        if(lista1[i]>0){ 
             lista2[cuantos]=lista1[i];
             cuantos++;
         }
