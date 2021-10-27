@@ -20,13 +20,13 @@ ListaPositivos<reales>
 
 
 int filtrarPositivos(double *lista1, double *lista2, int n){
-int cuantos=0;
-for(int i=0;i<n;i++){
-    if(lista1[i]>0){
-        lista2[cuantos]=lista1[i];
-        cuantos++;
-    }
-}
+    int cuantos=0;
+    for(int i=0;i<n;i++){
+        if(lista1[i]>0){
+            lista2[cuantos]=lista1[i];
+            cuantos++;
+        }
+    }   
 
 return cuantos; //devolvemos cuantos para luego poder recorrer la lista solucion y/o mostrarlos
 }
@@ -51,11 +51,10 @@ int main(){
         std::cin>>a;
         listaUsuario[i]=a;
     }
-int cuantos=filtrarPositivos(&listaUsuario[0],&listaSolucion[0],n);
-std::cout<<"La lista de los positivos es: \n";
-for(int p=0;p<cuantos;p++){
-    std::cout<<listaSolucion[p]<<'\n';
-}
+    int cuantos=filtrarPositivos(&listaUsuario[0],&listaSolucion[0],n);
+    std::cout<<"La lista de los positivos es: \n";
+    for(int p=0;p<cuantos;p++){
+        std::cout<<listaSolucion[p]<<'\n';
+    }
 
-return 0;
 }

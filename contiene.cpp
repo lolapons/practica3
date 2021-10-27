@@ -1,6 +1,9 @@
 /*
-ALumno: Lola Pons
-Practica3: contiene()
+------------------------------------------------
+//Practica3: contiene()
+// Autor: Lola Pons     
+// Fecha: Viernes 23 de octubre 2021
+------------------------------------------------
 */
 
 #include <iostream>
@@ -22,6 +25,12 @@ bool contiene(int *lista, int n, int a){
     }
     return false;
 }
+
+/*
+-------------------------------
+main()
+-------------------------------
+*/
 
 int main(){
     int a=5;

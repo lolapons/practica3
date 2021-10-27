@@ -1,5 +1,6 @@
 /*
 ------------------------------------------------
+//Practica3: sumarLista()
 // Autor: Lola Pons     
 // Fecha: Miercoles 20 de octubre 2021
 ------------------------------------------------
@@ -33,6 +34,7 @@ double sumarLista(int *lista, int n){
 main()
 -------------------------------
 */
+
 int main (){
     int n;
     double solucion;
